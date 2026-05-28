@@ -19,7 +19,7 @@
 
 ## Arquitectura de Docker
 
-La arquitectura de Docker se basa en un modelo cliente-servidor ligero que utiliza contenedores para empaquetar y ejecutar aplicaciones. Sus componentes principales son el Docker Host (donde corre el daemon), el Docker Client (CLI) y el Registry (repositorios como Docker Hub). 
+La arquitectura de Docker se basa en un modelo cliente-servidor ligero que utiliza contenedores para empaquetar y ejecutar aplicaciones. Sus componentes principales son el Docker Host (donde corre el daemon), el Docker Client (CLI) y el Registry (repositorios como Docker Hub).
 
 + **Docker Client :** Es la interfaz de línea de comandos (CLI) utilizada para interactuar con el motor de Docker (Docker Engine). Actúa como el intermediario entre el usuario y el demonio de Docker, enviando comandos a través de la API REST para gestionar contenedores e imágenes.
 
@@ -35,7 +35,7 @@ La arquitectura de Docker se basa en un modelo cliente-servidor ligero que utili
 
 Las **máquinas virtuales (VM)** y los **contenedores** permiten ejecutar aplicaciones de forma aislada, pero funcionan de manera diferente. Una máquina virtual emula un computador completo. Un contenedor ejecuta aplicaciones aisladas, pero comparte el kernel del sistema operativo host.
 
-| Contenedor | Maquina Virtual | 
+| Contenedor | Maquina Virtual |
 |---|---|
 | Bajo impacto en el sistema operativo, rápido, menor uso de espacio en disco. | Alto impacto en el sistema operativo, lento, mayor uso de espacio en disco. |
 |Compartir, reconstruir y distribuir es sencillo. | Compartir, reconstruir y distribuir puede ser todo un reto. |
@@ -49,12 +49,12 @@ Las **máquinas virtuales (VM)** y los **contenedores** permiten ejecutar aplica
 
 Se pueden utilizar los siguientes subcomandos para obtener más información sobre la instalación y el uso de Docker:
 
-#### Docker info 
+#### Docker info
 
 Imprime información sobre el sistema Docker y el host.
 
 ```sh
-$ docker info
+docker info
 ```
 
 #### Docker help
@@ -62,14 +62,15 @@ $ docker info
 Imprime información de uso y ayuda para el subcomando dado.
 
 ```sh
-$ docker help
+docker help
 ```
+
 #### Docker version
 
 Imprime información de la versión de Docker para el cliente y el servidor, así como la versión de Go utilizada en la compilación.
 
 ```sh
-$ docker version
+docker version
 ```
 
 ## Comandos útiles en linux
@@ -79,7 +80,7 @@ $ docker version
 Te permite listar el contenido del directorio que desea (el directorio actual de forma predeterminada), incluidos archivos y otros directorios anidados.
 
 ```sh
-$ ls
+ls
 ```
 
 #### pwd
@@ -87,32 +88,33 @@ $ ls
 El comando pwd significa "Print Working Directory" y genera la ruta absoluta del directorio en el que se encuentra.
 
 ```sh
-$ pwd
+pwd
 ```
+
 #### cd
 
 El comando cd se refiere a "Change Directory", como su nombre indica, lo lleva al directorio al que está intentando acceder.
 
 ```sh
-$ cd path/to/go
+cd path/to/go
 ```
 
 ejemplo:
 
 ```sh
-$ cd /home/Max/Documents/
+cd /home/Max/Documents/
 ```
 
 Para ir al directorio home
 
 ```sh
-$ cd 
+cd 
 ```
 
 Para ir un nivel atras
 
 ```sh
-$ cd ..
+cd ..
 ```
 
 #### touch
@@ -120,7 +122,7 @@ $ cd ..
 El comando touch te permite crear un archivo
 
 ```sh
-$ touch new_file.txt
+touch new_file.txt
 ```
 
 #### mkdir
@@ -128,13 +130,13 @@ $ touch new_file.txt
 El comando mkdir se refiere a "Make Directory", como su nombre indica, crea un nuevo directorio.
 
 ```sh
-$ mkdir directory_name
+mkdir directory_name
 ```
 
 Para crear directorios de manera recursiva, usaremos el comando de la siguiente manera:
 
 ```sh
-$ mkdir -p directory_name/sub_folder/sub_sub_folder
+mkdir -p directory_name/sub_folder/sub_sub_folder
 ```
 
 #### cp
@@ -144,13 +146,13 @@ El comando cp te permite copiar archivos y carpetas desde la terminal
 Para copiar un archivo debes utilizar el comando cp de la siguiente forma
 
 ```sh
-$ cp file_to_copy.txt new_file.txt
+cp file_to_copy.txt new_file.txt
 ```
 
 Para copiar una carpeta debes utilizar el comando cp de la siguiente forma
 
 ```sh
-$ cp -r dir_to_copy/ new_copy_dir/
+cp -r dir_to_copy/ new_copy_dir/
 ```
 
 #### rm
@@ -160,7 +162,7 @@ El comando rm te permitira eliminar archivos y carpetas desde el terminal
 Para eliminar un archivo debes utilizar el comando rm de la siguiente forma
 
 ```sh
-$ rm file_to_copy.txt
+rm file_to_copy.txt
 ```
 
 Para eliminar una carpeta debes utilizar el comando rm de la siguiente forma
